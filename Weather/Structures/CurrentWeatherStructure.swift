@@ -21,11 +21,11 @@ struct Main: Codable {
 
 struct Wind: Codable {
     let speed: Double
-    let deg: Int
+    let deg: Double
 }
 
 struct Clouds: Codable {
-    let all: Int
+    let all: Double
 }
 
 struct Rain: Codable {
