@@ -10,6 +10,10 @@ import UIKit
 
 class CurrentViewController: UIViewController {
 
+    @IBOutlet weak var cityNameLbl: UILabel!
+    @IBOutlet weak var summaryLbl: UILabel!
+    @IBOutlet weak var temperatureLbl: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
