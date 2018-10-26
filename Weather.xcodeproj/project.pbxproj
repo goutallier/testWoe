@@ -16,6 +16,7 @@
 		23E7AED921821D9B00CB5C01 /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AED821821D9B00CB5C01 /* CurrentViewController.swift */; };
 		23E7AEDB21821E1A00CB5C01 /* ForecastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEDA21821E1A00CB5C01 /* ForecastsViewController.swift */; };
 		23E7AEDD21821E3A00CB5C01 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEDC21821E3A00CB5C01 /* StatsViewController.swift */; };
+		23E7AEE52183181F00CB5C01 /* ForecastDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEE42183181F00CB5C01 /* ForecastDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		23E7AED821821D9B00CB5C01 /* CurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
 		23E7AEDA21821E1A00CB5C01 /* ForecastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastsViewController.swift; sourceTree = "<group>"; };
 		23E7AEDC21821E3A00CB5C01 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		23E7AEE42183181F00CB5C01 /* ForecastDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +87,11 @@
 			children = (
 				238B6F4E2181A783003BBCC9 /* AppDelegate.swift */,
 				238B6F502181A783003BBCC9 /* ViewController.swift */,
-				23E7AED821821D9B00CB5C01 /* CurrentViewController.swift */,
+				23E7AEDE218315EA00CB5C01 /* ChildViewControllers */,
+				23E7AEDF2183163300CB5C01 /* CustomCells */,
+				23E7AEE02183164D00CB5C01 /* DataProviders */,
+				23E7AEE12183167200CB5C01 /* Networking */,
 				238B6F522181A783003BBCC9 /* Main.storyboard */,
-				23E7AEDC21821E3A00CB5C01 /* StatsViewController.swift */,
-				23E7AEDA21821E1A00CB5C01 /* ForecastsViewController.swift */,
 				238B6F552181A784003BBCC9 /* Assets.xcassets */,
 				238B6F572181A784003BBCC9 /* LaunchScreen.storyboard */,
 				238B6F5A2181A784003BBCC9 /* Info.plist */,
@@ -103,6 +106,38 @@
 				238B6F652181A784003BBCC9 /* Info.plist */,
 			);
 			path = WeatherTests;
+			sourceTree = "<group>";
+		};
+		23E7AEDE218315EA00CB5C01 /* ChildViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				23E7AED821821D9B00CB5C01 /* CurrentViewController.swift */,
+				23E7AEDA21821E1A00CB5C01 /* ForecastsViewController.swift */,
+				23E7AEDC21821E3A00CB5C01 /* StatsViewController.swift */,
+			);
+			path = ChildViewControllers;
+			sourceTree = "<group>";
+		};
+		23E7AEDF2183163300CB5C01 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		23E7AEE02183164D00CB5C01 /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				23E7AEE42183181F00CB5C01 /* ForecastDataProvider.swift */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		23E7AEE12183167200CB5C01 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				238B6F512181A783003BBCC9 /* ViewController.swift in Sources */,
+				23E7AEE52183181F00CB5C01 /* ForecastDataProvider.swift in Sources */,
 				23E7AEDB21821E1A00CB5C01 /* ForecastsViewController.swift in Sources */,
 				23E7AED921821D9B00CB5C01 /* CurrentViewController.swift in Sources */,
 				23E7AEDD21821E3A00CB5C01 /* StatsViewController.swift in Sources */,
