@@ -26,12 +26,6 @@
                                     <segue destination="Pea-by-F44" kind="embed" id="aFD-d9-GXV"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVo-fa-yac" userLabel="Stats">
-                                <rect key="frame" x="0.0" y="474" width="375" height="193"/>
-                                <connections>
-                                    <segue destination="F2n-mt-yZV" kind="embed" id="e1m-Qd-jsY"/>
-                                </connections>
-                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzK-CZ-c4N" userLabel="Forecast">
                                 <rect key="frame" x="0.0" y="162" width="375" height="304"/>
                                 <constraints>
@@ -39,6 +33,12 @@
                                 </constraints>
                                 <connections>
                                     <segue destination="Olj-RC-9Hv" kind="embed" id="iwN-XI-lb4"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVo-fa-yac" userLabel="Stats">
+                                <rect key="frame" x="0.0" y="474" width="375" height="193"/>
+                                <connections>
+                                    <segue destination="F2n-mt-yZV" kind="embed" id="e1m-Qd-jsY"/>
                                 </connections>
                             </containerView>
                         </subviews>
