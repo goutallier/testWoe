@@ -21,12 +21,13 @@ class ForecastDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView?.dequeueReusableCell(
-            withIdentifier: "ItemCell",
-            for: IndexPath(row: 0, section: 0)) as! ItemCell
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "forecastCell",
+            for: IndexPath(row: 0, section: 0)) as! ForecastTableViewCell
         
-        cell.textLabel?.text = "Totototottotttoottoottotto"
-        cell.backgroundColor = .red
+        cell.dayLabel.text = "Monday"
+        cell.minLabel.text = "-10"
+        cell.maxLabel.text = "40"
         return cell
     }
 }
