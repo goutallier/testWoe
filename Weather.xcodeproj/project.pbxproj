@@ -17,6 +17,7 @@
 		23E7AEDB21821E1A00CB5C01 /* ForecastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEDA21821E1A00CB5C01 /* ForecastsViewController.swift */; };
 		23E7AEDD21821E3A00CB5C01 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEDC21821E3A00CB5C01 /* StatsViewController.swift */; };
 		23E7AEE52183181F00CB5C01 /* ForecastDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEE42183181F00CB5C01 /* ForecastDataProvider.swift */; };
+		23E7AEE721833C5800CB5C01 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEE621833C5800CB5C01 /* ForecastTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		23E7AEDA21821E1A00CB5C01 /* ForecastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastsViewController.swift; sourceTree = "<group>"; };
 		23E7AEDC21821E3A00CB5C01 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		23E7AEE42183181F00CB5C01 /* ForecastDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDataProvider.swift; sourceTree = "<group>"; };
+		23E7AEE621833C5800CB5C01 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		23E7AEDF2183163300CB5C01 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				23E7AEE621833C5800CB5C01 /* ForecastTableViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				23E7AEE52183181F00CB5C01 /* ForecastDataProvider.swift in Sources */,
 				23E7AEDB21821E1A00CB5C01 /* ForecastsViewController.swift in Sources */,
 				23E7AED921821D9B00CB5C01 /* CurrentViewController.swift in Sources */,
+				23E7AEE721833C5800CB5C01 /* ForecastTableViewCell.swift in Sources */,
 				23E7AEDD21821E3A00CB5C01 /* StatsViewController.swift in Sources */,
 				238B6F4F2181A783003BBCC9 /* AppDelegate.swift in Sources */,
 			);
