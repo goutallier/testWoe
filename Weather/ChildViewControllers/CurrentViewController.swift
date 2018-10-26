@@ -39,7 +39,7 @@ class CurrentViewController: UIViewController {
             return
         }
         
-        temperatureLbl.text = String(temp)
+        temperatureLbl.text = temp.convertToCelsius()
     }
     
     
