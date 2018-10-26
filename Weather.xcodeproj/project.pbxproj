@@ -20,6 +20,7 @@
 		23E7AEE721833C5800CB5C01 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEE621833C5800CB5C01 /* ForecastTableViewCell.swift */; };
 		23E7AEE92183505D00CB5C01 /* CurrentWeatherDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEE82183505D00CB5C01 /* CurrentWeatherDataProvider.swift */; };
 		23E7AEEC2183518800CB5C01 /* CurrentWeatherStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEEB2183518800CB5C01 /* CurrentWeatherStructure.swift */; };
+		23E7AEEE2183523700CB5C01 /* ForecastStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E7AEED2183523700CB5C01 /* ForecastStructure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		23E7AEE621833C5800CB5C01 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		23E7AEE82183505D00CB5C01 /* CurrentWeatherDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherDataProvider.swift; sourceTree = "<group>"; };
 		23E7AEEB2183518800CB5C01 /* CurrentWeatherStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherStructure.swift; sourceTree = "<group>"; };
+		23E7AEED2183523700CB5C01 /* ForecastStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastStructure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				23E7AEEB2183518800CB5C01 /* CurrentWeatherStructure.swift */,
+				23E7AEED2183523700CB5C01 /* ForecastStructure.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E7AEEE2183523700CB5C01 /* ForecastStructure.swift in Sources */,
 				238B6F512181A783003BBCC9 /* ViewController.swift in Sources */,
 				23E7AEE52183181F00CB5C01 /* ForecastDataProvider.swift in Sources */,
 				23E7AEDB21821E1A00CB5C01 /* ForecastsViewController.swift in Sources */,
