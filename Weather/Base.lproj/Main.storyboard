@@ -17,20 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hgh-iO-huL">
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hgh-iO-huL" userLabel="Current">
                                 <rect key="frame" x="0.0" y="64" width="375" height="126"/>
                                 <connections>
                                     <segue destination="Pea-by-F44" kind="embed" id="aFD-d9-GXV"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVo-fa-yac">
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVo-fa-yac" userLabel="Stats">
                                 <rect key="frame" x="0.0" y="565" width="375" height="102"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="F2n-mt-yZV" kind="embed" id="e1m-Qd-jsY"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BzK-CZ-c4N">
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BzK-CZ-c4N" userLabel="Forecast">
                                 <rect key="frame" x="0.0" y="198" width="375" height="296"/>
                                 <connections>
                                     <segue destination="Olj-RC-9Hv" kind="embed" id="iwN-XI-lb4"/>
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="1940" y="-17.091454272863569"/>
         </scene>
-        <!--View Controller-->
+        <!--Stats View Controller-->
         <scene sceneID="N8W-Xd-78X">
             <objects>
-                <viewController id="F2n-mt-yZV" sceneMemberID="viewController">
+                <viewController id="F2n-mt-yZV" customClass="StatsViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vKs-EZ-bmU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
