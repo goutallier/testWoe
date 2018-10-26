@@ -9,6 +9,8 @@
 import UIKit
 
 class ForecastDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate {
+    
+    var forecast: Forecast?
 
     func numberOfSections(in tableView: UITableView) -> Int {
         print("numberOfSections")
@@ -25,9 +27,9 @@ class ForecastDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate
             withIdentifier: "forecastCell",
             for: IndexPath(row: 0, section: 0)) as! ForecastTableViewCell
         
-        cell.dayLabel.text = "Monday"
-        cell.minLabel.text = "-10"
-        cell.maxLabel.text = "40"
+//        cell.dayLabel.text = "Monday"
+//        cell.minLabel.text = "-10"
+//        cell.maxLabel.text = "40"
         return cell
     }
 }
