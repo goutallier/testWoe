@@ -11,17 +11,22 @@ import UIKit
 class ForecastDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
+        print("numberOfSections")
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        print("numberOfRows")
+        return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView?.dequeueReusableCell(
+            withIdentifier: "ItemCell",
+            for: IndexPath(row: 0, section: 0)) as! ItemCell
+        
         cell.textLabel?.text = "Totototottotttoottoottotto"
         cell.backgroundColor = .red
-        return UITableViewCell()
+        return cell
     }
 }
