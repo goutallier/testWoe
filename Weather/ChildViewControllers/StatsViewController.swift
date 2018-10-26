@@ -10,6 +10,13 @@ import UIKit
 
 class StatsViewController: UIViewController {
 
+    @IBOutlet weak var sunriseTime: UILabel!
+    @IBOutlet weak var sunsetTime: UILabel!
+    @IBOutlet weak var cloudsPercent: UILabel!
+    @IBOutlet weak var rainHeight: UILabel!
+    @IBOutlet weak var humidityPercent: UILabel!
+    @IBOutlet weak var pressionQuantity: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
