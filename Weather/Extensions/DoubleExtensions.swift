@@ -58,4 +58,13 @@ extension Double {
         formatter.dateFormat = "EEEE"
         return formatter.string(from: dt)
     }
+    
+    func convertToPercent() -> String {
+        return String("\(self) %")
+    }
+    
+    func convertToHpa() -> String {
+        let pressure = Measurement.init(value: self, unit: UnitPressure.hectopascals)
+        return String("\(pressure)")
+    }
 }
