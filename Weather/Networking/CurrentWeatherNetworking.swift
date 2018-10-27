@@ -39,10 +39,10 @@ class CurrentWeatherNetworking: NSObject {
     
     func decodeJSON(with data: Data) -> CurrentWeatherData? {
         let decoder = JSONDecoder()
-        guard let forecastData = try? decoder.decode(CurrentWeatherData.self, from: data) else {
-            print("error: Could not decode JSON into currentForecast")
+        guard let currentWeather = try? decoder.decode(CurrentWeatherData.self, from: data) else {
+            print("error: Could not decode JSON into CurrentWeatherData")
             return nil
         }
-        return forecastData
+        return currentWeather
     }
 }
