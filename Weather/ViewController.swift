@@ -38,6 +38,9 @@ class ViewController: UIViewController {
         currentViewController?.currentWeather = current
         currentViewController?.reload()
         
+        statsViewController?.currentWeather = current
+        statsViewController?.reload()
+        
         // remove main activity indicator 
     }
     
