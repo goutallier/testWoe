@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         cwn.downloadCurrentWeather(completionHandler: didDownloadCurrentData(current:message:))
         
         // load forecast data
+        let fn = ForecastsNetworking()
+        fn.downloadForecasts(completionHandler: didDownloadForecastsData(current:message:))
         
     }
 
@@ -38,7 +40,24 @@ class ViewController: UIViewController {
         
         // remove main activity indicator 
     }
+    
+    func didDownloadForecastsData(current : CurrentForecasts?, message: String?) {
+        
+        guard let current = current else {
+            return
+        }
+        // populate forecasts
+        guard let dataProvider = forecastsViewController?.dataProvider as? ForecastDataProvider else {
+            return
+        }
+        dataProvider.forecasts = current
+        
+        forecastsViewController?.reload()
+        
+        // remove forecast activity indicator
+    }
 
+    
     // prepare(for segue, sender) is used here to retrieve the references of childViewControllers
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination
