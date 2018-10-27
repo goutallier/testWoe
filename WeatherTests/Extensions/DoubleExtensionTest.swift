@@ -19,43 +19,43 @@ class DoubleExtensionTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testDoubleHasExtensionConvertToCelsius() {
+    func test_DoubleHasExtension_ConvertToCelsius() {
         let test: Double
         test = 273.0
         XCTAssertEqual(test.convertToCelsius(.withoutUnit), "0", "Double type should have a convertToCelsius() extension")
     }
     
-    func testDoubleExtensionConvertToCelsiusReturnsStringWithUnit() {
+    func test_DoubleExtension_ConvertToCelsius_ReturnsStringWithUnit() {
         let test: Double
         test = 273.0
         XCTAssertEqual(test.convertToCelsius(.withUnit), "0º", "Double type should have a convertToCelsius() extension")
     }
     
-    func testDoubleExtensionConvertToHourReturnsAmericanHourString() {
+    func test_DoubleExtension_ConvertToHour_ReturnsAmericanHourString() {
         let test: Double
         test = 1485802800
         XCTAssertEqual(test.convertToHour(format: .american), "8:00 PM", "Double type should have a convertToHour(.american) extension")
     }
     
-    func testDoubleExtensionConvertToHourReturnsMilitaryHourString() {
+    func test_DoubleExtension_ConvertToHour_ReturnsMilitaryHourString() {
         let test: Double
         test = 1485802800
         XCTAssertEqual(test.convertToHour(format: .military), "20:00", "Double type should have a convertToHour(.military) extension")
     }
     
-    func testDoubleExtensionConvertToDayReturnsStringOfWeekday() {
+    func test_DoubleExtension_ConvertToDay_ReturnsStringOfWeekday() {
         let test: Double
         test = 1485802800
         XCTAssertEqual(test.convertToDay(), "Monday", "Double type should have a convertToDay() extension")
     }
     
-    func testDoubleExtensionConvertToPercent() {
+    func test_DoubleExtension_ConvertToPercent() {
         let test: Double
         test = 98
         XCTAssertEqual(test.convertToPercent(), "98 %", "Double type should have a convertToPercent() extension")
     }
     
-    func testDoubleExtensionConvertToHpa() {
+    func test_DoubleExtension_ConvertToHpa() {
         let test: Double
         test = 1002
         // WARNING: this is not a space but a thousands separator
