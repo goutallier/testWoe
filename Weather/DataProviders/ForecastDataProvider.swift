@@ -29,6 +29,10 @@ class ForecastDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate
             withIdentifier: "forecastCell",
             for: IndexPath(row: 0, section: 0)) as! ForecastTableViewCell
         
+        guard let forecasts = forecasts else {
+            return UITableViewCell()
+        }
+        
         let dailyForecast = forecasts.list[indexPath.row]
         
         cell.dayLabel.text = dailyForecast.dt.convertToDay()
