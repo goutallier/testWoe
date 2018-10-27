@@ -60,11 +60,15 @@ extension Double {
     }
     
     func convertToPercent() -> String {
-        return String("\(self) %")
+        return String("\(Int(self)) %")
     }
     
     func convertToHpa() -> String {
         let pressure = Measurement.init(value: self, unit: UnitPressure.hectopascals)
-        return String("\(pressure)")
+        let measurementFormatter = MeasurementFormatter()
+        measurementFormatter.numberFormatter.numberStyle = NumberFormatter.Style.none
+        measurementFormatter.unitOptions = MeasurementFormatter.UnitOptions.providedUnit
+        measurementFormatter.locale = Locale.init(identifier: "fr_FR")
+        return String("\(measurementFormatter.string(from: pressure))")
     }
 }
