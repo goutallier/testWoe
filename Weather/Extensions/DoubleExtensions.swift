@@ -10,11 +10,23 @@ import Foundation
 
 extension Double {
     
-    func convertToCelsius() -> String {
+    enum unitAppearance {
+        case withUnit
+        case withoutUnit
+    }
+    
+    func convertToCelsius(_ unitAppears : unitAppearance) -> String {
         // convert tº from K to Cº
         let tempKelvin = Measurement.init(value: self, unit: UnitTemperature.kelvin)
         let tempCelsius = tempKelvin.converted(to: UnitTemperature.celsius)
-        return String("\(Int(tempCelsius.value.rounded()))º")
+        var unitSring : String
+        switch unitAppears {
+        case .withUnit:
+            unitSring = "º"
+        default:
+            unitSring = ""
+        }
+        return String("\(Int(tempCelsius.value.rounded()))\(unitSring)")
     }
     
     enum hourFormat {
