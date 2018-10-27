@@ -48,4 +48,14 @@ extension Double {
         
         return formatter.string(from: dt)
     }
+    
+    func convertToDay() -> String {
+        let dt = Date(timeIntervalSince1970: self)
+        
+        // convert timestamp to weekday
+        let formatter = DateFormatter()
+        formatter.locale = Locale.current
+        formatter.dateFormat = "EEEE"
+        return formatter.string(from: dt)
+    }
 }
