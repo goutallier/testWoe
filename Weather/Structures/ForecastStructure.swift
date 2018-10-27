@@ -18,7 +18,7 @@ struct Forecast : Codable {
     let temp : Temp
 }
 
-struct CurrentForecast : Codable {
+struct CurrentForecasts : Codable {
     let cnt: Int
     let list: [Forecast]
 }
