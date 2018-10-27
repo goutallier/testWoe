@@ -138,7 +138,7 @@
         <!--Forecasts View Controller-->
         <scene sceneID="oXg-n5-4U6">
             <objects>
-                <viewController id="Olj-RC-9Hv" customClass="ForecastsViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForecastsViewController" id="Olj-RC-9Hv" customClass="ForecastsViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRm-WX-2Dy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
