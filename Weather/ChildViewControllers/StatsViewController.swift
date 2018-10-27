@@ -17,21 +17,37 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var humidityPercent: UILabel!
     @IBOutlet weak var pressionQuantity: UILabel!
     
+    var currentWeather: CurrentWeatherData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func reload() {
+        if let sunrise = currentWeather?.sys.sunrise {
+            sunriseTime.text = sunrise.convertToHour(format: .american)
+        }
+        
+        if let sunset = currentWeather?.sys.sunset {
+            sunsetTime.text = sunset.convertToHour(format: .american)
+        }
+        
+        if let clouds = currentWeather?.clouds?.all {
+            cloudsPercent.text = clouds.convertToPercent()
+        }
+        
+        if let rain = currentWeather?.rain?.volume {
+            rainHeight.text = "\(rain) mm"
+        }
+        
+        if let humidity = currentWeather?.main.humidity {
+            humidityPercent.text = humidity.convertToPercent()
+        }
+        
+        if let pressure = currentWeather?.main.pressure {
+            pressionQuantity.text = pressure.convertToHpa()
+        }
     }
-    */
-
 }
